@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="hearts"></div>
+    
+    <!-- Confetti -->
+    <div class="confetti-container" id="confetti"></div>
+
+    <!-- Page 1: Landing -->
+    <section class="page active" id="page1">
+        <div class="page-content">
+            <div class="envelope">
+                <div class="envelope-top"></div>
+                <div class="envelope-body">
+                    <div class="letter-preview">💌</div>
+                </div>
+            </div>
+            <h1 class="main-title">You Have a Special Message</h1>
+            <p class="subtitle">Someone loves you very much...</p>
+            <button class="next-btn glow-btn" onclick="nextPage(2)">
+                <span>Open the Envelope</span>
+                <div class="btn-glow"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Page 2: Birthday Reveal -->
+    <section class="page" id="page2">
+        <div class="page-content">
+            <div class="birthday-reveal">
+                <div class="balloons">
+                    <span class="balloon" style="--delay: 0s">🎈</span>
+                    <span class="balloon" style="--delay: 0.2s">🎈</span>
+                    <span class="balloon" style="--delay: 0.4s">🎈</span>
+                    <span class="balloon" style="--delay: 0.6s">🎈</span>
+                    <span class="balloon" style="--delay: 0.8s">🎈</span>
+                </div>
+                <h1 class="main-title birthday-text">Happy Birthday!</h1>
+                <h2 class="name">My Love ❤️</h2>
+                <div class="cake-emoji">🎂</div>
+                <p class="subtitle">আজ তোমার special দিন!</p>
+            </div>
+            <button class="next-btn" onclick="nextPage(3)">
+                <span>Read My Letter →</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Page 3: Letter -->
+    <section class="page" id="page3">
+        <div class="page-content">
+            <h2 class="section-title">A Letter For You 💌</h2>
+            <div class="letter">
+                <p>প্রিয়তমা,</p>
+                <p>আজ তোমার জন্মদিনে তোমাকে জানাতে চাই - তুমি আমার জীবনের সবচেয়ে সুন্দর উপহার। তোমার হাসি আমার দিনকে আলোকিত করে, তোমার ভালোবাসা আমাকে শক্তি দেয়।</p>
+                <p>প্রতিটি মুহূর্ত তোমার সাথে কাটানো আমার জীবনের সেরা স্মৃতি। তোমার চোখের দিকে তাকালে আমি আমার সব স্বপ্ন দেখতে পাই।</p>
+                <p>জন্মদিনের অনেক অনেক শুভেচ্ছা ও ভালোবাসা! 💕</p>
+                <p class="signature">- তোমার ❤️</p>
+            </div>
+            <button class="next-btn" onclick="nextPage(4)">
+                <span>See Our Memories →</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Page 4: Gallery -->
+    <section class="page" id="page4">
+        <div class="page-content gallery-page">
+            <h2 class="section-title">Our Beautiful Memories 📸</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=400&h=400&fit=crop" alt="Memory 1">
+                    <div class="overlay">
+                        <p>Our first date ❤️</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=400&fit=crop" alt="Memory 2">
+                    <div class="overlay">
+                        <p>That special day 💕</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=400&h=400&fit=crop" alt="Memory 3">
+                    <div class="overlay">
+                        <p>Forever yours 💖</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400&h=400&fit=crop" alt="Memory 4">
+                    <div class="overlay">
+                        <p>My favorite moment 💗</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e47?w=400&h=400&fit=crop" alt="Memory 5">
+                    <div class="overlay">
+                        <p>You & Me 💝</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1455103493930-a116f655b6c5?w=400&h=400&fit=crop" alt="Memory 6">
+                    <div class="overlay">
+                        <p>Pure happiness 💞</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1455103493930-a116f655b6c5?w=400&h=400&fit=crop" alt="Memory 6">
+                    <div class="overlay">
+                        <p>Pure happiness 💞</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1455103493930-a116f655b6c5?w=400&h=400&fit=crop" alt="Memory 6">
+                    <div class="overlay">
+                        <p>Pure happiness 💞</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1455103493930-a116f655b6c5?w=400&h=400&fit=crop" alt="Memory 6">
+                    <div class="overlay">
+                        <p>Pure happiness 💞</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next-btn" onclick="nextPage(5)">
+                <span>Read Love Notes →</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Page 5: Love Notes -->
+    <section class="page" id="page5">
+        <div class="page-content">
+            <h2 class="section-title">Why I Love You 💝</h2>
+            <div class="notes-slider">
+                <div class="note-slide active" id="note1">
+                    <div class="note-card big">
+                        <div class="note-icon">💝</div>
+                        <h3>Reason #1</h3>
+                        <p>তোমার হাসি দেখলে আমার সব কষ্ট ভুলে যাই। তোমার হাসি আমার জীবনের সবচেয়ে সুন্দর জিনিস।</p>
+                    </div>
+                    <button class="note-nav-btn" onclick="nextNote(2)">Next Reason →</button>
+                </div>
+                <div class="note-slide" id="note2">
+                    <div class="note-card big">
+                        <div class="note-icon">💖</div>
+                        <h3>Reason #2</h3>
+                        <p>তুমি সবসময় আমাকে বোঝো, আমার পাশে থাকো। তুমি আমার সবচেয়ে কাছের মানুষ।</p>
+                    </div>
+                    <button class="note-nav-btn" onclick="nextNote(3)">Next Reason →</button>
+                </div>
+                <div class="note-slide" id="note3">
+                    <div class="note-card big">
+                        <div class="note-icon">💕</div>
+                        <h3>Reason #3</h3>
+                        <p>তোমার সাথে সময় কাটালে মনে হয় স্বর্গে আছি। প্রতিটি মুহূর্ত magical।</p>
+                    </div>
+                    <button class="note-nav-btn" onclick="nextNote(4)">Next Reason →</button>
+                </div>
+                <div class="note-slide" id="note4">
+                    <div class="note-card big">
+                        <div class="note-icon">💗</div>
+                        <h3>Reason #4</h3>
+                        <p>তুমি আমার সবচেয়ে ভালো বন্ধু, আমার সব। তোমার সাথে সব share করতে পারি।</p>
+                    </div>
+                    <button class="note-nav-btn" onclick="nextNote(5)">Next Reason →</button>
+                </div>
+                <div class="note-slide" id="note5">
+                    <div class="note-card big">
+                        <div class="note-icon">💞</div>
+                        <h3>Reason #5</h3>
+                        <p>তোমার চোখে নিজেকে দেখতে পাই। তোমার চোখ আমার favorite place।</p>
+                    </div>
+                    <button class="note-nav-btn" onclick="nextPage(6)">See My Wishes →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 6: Birthday Wishes -->
+    <section class="page" id="page6">
+        <div class="page-content">
+            <h2 class="section-title">Birthday Wishes 🎂</h2>
+            <div class="cake-animation">
+                <div class="cake big-cake">🎂</div>
+                <p class="wish-text">Make a wish, my love!</p>
+            </div>
+            <div class="wishes-list">
+                <div class="wish-item">🌟 তোমার সব স্বপ্ন পূরণ হোক</div>
+                <div class="wish-item">💫 সবসময় হাসি মুখে থাকো</div>
+                <div class="wish-item">✨ জীবন সুখে ভরে থাকুক</div>
+                <div class="wish-item">🌈 আমরা চিরকাল একসাথে থাকি</div>
+            </div>
+            <button class="next-btn" onclick="nextPage(7)">
+                <span>One Last Thing... →</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Page 7: Final -->
+    <section class="page" id="page7">
+        <div class="page-content final-page">
+            <div class="hearts-rain" id="heartsRain"></div>
+            <div class="final-reveal">
+                <div class="big-heart">❤️</div>
+                <h1 class="final-title">I Love You</h1>
+                <h2 class="final-subtitle">Forever & Always</h2>
+                <p class="final-message">তুমি আমার সবকিছু 💕</p>
+                <div class="final-hearts">
+                    <span>💕</span><span>💖</span><span>💗</span><span>💝</span><span>💞</span>
+                </div>
+            </div>
+            <button class="next-btn restart-btn" onclick="restart()">
+                <span>Start Again 🔄</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Progress Indicator -->
+    <div class="progress-dots">
+        <span class="dot active" onclick="goToPage(1)"></span>
+        <span class="dot" onclick="goToPage(2)"></span>
+        <span class="dot" onclick="goToPage(3)"></span>
+        <span class="dot" onclick="goToPage(4)"></span>
+        <span class="dot" onclick="goToPage(5)"></span>
+        <span class="dot" onclick="goToPage(6)"></span>
+        <span class="dot" onclick="goToPage(7)"></span>
+    </div>
+
+    <!-- Background Music Toggle -->
+    <button class="music-toggle" id="musicToggle">🎵</button>
+    <audio id="bgMusic" loop>
+        <source src="music/love.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
