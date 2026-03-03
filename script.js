@@ -26,7 +26,7 @@ function nextPage(pageNum) {
         }
         
         // Trigger hearts rain on final page
-        if (pageNum === 7) {
+        if (pageNum === 11) {
             setTimeout(createHeartsRain, 500);
             setTimeout(createConfetti, 300);
         }
@@ -110,7 +110,7 @@ function createFloatingHearts() {
 // Create Confetti Burst
 function createConfetti() {
     const confettiContainer = document.getElementById('confetti');
-    const colors = ['#ff6b6b', '#ffd93d', '#6bcb77', '#4d96ff', '#ff8fb1', '#a855f7'];
+    const colors = ['#e89595', '#ffd89b', '#7dd3fc', '#a5b4fc', '#f5b8b8', '#c4b5fd'];
     
     for (let i = 0; i < 80; i++) {
         setTimeout(() => {
@@ -220,7 +220,7 @@ function initGalleryLightbox() {
                 max-height: 90%;
                 object-fit: contain;
                 border-radius: 15px;
-                box-shadow: 0 20px 60px rgba(255,107,107,0.3);
+                box-shadow: 0 20px 60px rgba(232,149,149,0.35);
             `;
             
             lightbox.appendChild(imgClone);
@@ -241,7 +241,7 @@ function initKeyboardNav() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
             e.preventDefault();
-            if (currentPage < 7) {
+            if (currentPage < 11) {
                 nextPage(currentPage + 1);
             }
         }
@@ -273,7 +273,7 @@ function initTouchNav() {
         const diff = touchStartX - touchEndX;
         
         if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0 && currentPage < 7) {
+            if (diff > 0 && currentPage < 11) {
                 // Swipe left - next page
                 nextPage(currentPage + 1);
             } else if (diff < 0 && currentPage > 1) {
